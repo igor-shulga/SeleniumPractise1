@@ -12,6 +12,8 @@ public class Testing {
         Thread.sleep(2000);
         driver.findElement(new By.ByLinkText("Java дайджест #0 | DOU")).click();
         Thread.sleep(5000);
+        String i = driver.getCurrentUrl();
+        System.out.println("Java Digest #0 found at URL:  " + i );
         driver.quit();
     }
 }
